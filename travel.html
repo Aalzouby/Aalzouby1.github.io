@@ -1,15 +1,17 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Travel Page - Dubai</title>
-    <style>
-      body {
-        background-color: #000000;
-      .video-container {
-        position: relative;
-        width: 100%; /* Ensures video fills its container */
-        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-        height: 0;
-        overflow: hidden;
+<head>
+  <title>Travel Page - Dubai</title>
+  <style>
+    body {
+      background-color: #000000;
+    }
+    .video-container {
+      position: relative;
+      width: 100%; /* Ensures video fills its container */
+      padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+      height: 0;
+      overflow: hidden;
     }
     .video-container iframe {
       position: absolute;
@@ -17,36 +19,31 @@
       left: 0;
       width: 100%;
       height: 100%;
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <script>
-      alert("Click here to go on vacation!");
-    </script>
-    <center>
-      <a href="Dubai001.jpg">
-      <img src="Dubai001.jpg" title="Dubai Picture #1" 
-        width="600" height="300">
-      </a>
-      <a href="Dubai002.jpg">
-      <img src="Dubai002.jpg" title="Dubai Picture #2" 
-        width="600" height="300">
-      </a>
-      <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YsMrvWgK6V4?si=QexoGWtViOkApmlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <br>
-      <a href="Dubai002.jpg">
-      <img src="Dubai002.jpg" title="Dubai Picture #2" 
-        width="600" height="300">
-      </a>
-      <a href="Dubai001.jpg">
-      <img src="Dubai001.jpg" title="Dubai Picture #1" 
-        width="600" height="300">
-      </a>
-      <br>
-      <a href="index.html">Click here to go home</a> 
-    </center>
-  </body>
+<body>
+  <center>
+    <a href="Dubai001.jpg">
+      <img src="Dubai001.jpg" title="Dubai Picture #1" width="600" height="300">
+    </a>
+    <a href="Dubai002.jpg">
+      <img src="Dubai002.jpg" title="Dubai Picture #2" width="600" height="300">
+    </a>
+    <br>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/YsMrvWgK6V4?si=QexoGWtViOkApmlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <a href="Dubai002.jpg">
+      <img src="Dubai002.jpg" title="Dubai Picture #2" width="600" height="300">
+    </a>
+    <a href="Dubai001.jpg">
+      <img src="Dubai001.jpg" title="Dubai Picture #1" width="600" height="300">
+    </a>
+    <br>
+    <a href="index.html">Click here to go home</a> 
+  </center>
+</body>
 </html>
