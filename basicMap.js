@@ -8,10 +8,11 @@ let map = L.map("map", {
 
 });
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+
+
+let markers = [];
+
+markers.push(
 
 L.marker([35.2176665, -80.831473], {
   title: "Hello from CPCC!"
@@ -24,3 +25,21 @@ L.marker([35.2176665, -80.831473], {
 </center>
 `)
   .addTo(map);
+)
+
+let CPCC = L.layerGroup(markers);
+
+let strreet = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
+
+var topo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
+	maxZoom: 20,
+	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
+});
+
+let baseMaps = {
+  Street: street,
+  Topographic: topo
+}
